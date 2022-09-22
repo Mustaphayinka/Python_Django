@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <h3>Glass Classification</h3>
+    <form action="{% url 'result' %}">
+        <h2>Enter the form data</h2>
+        
+        {% csrf_token %}
+        RI: <input type="text" required name = 'RI'> <br>
+        Na: <input type="text" required name = 'Na'> <br>
+        Mg: <input type="text" required name = 'Mg'> <br>
+        Al: <input type="text" required name = 'Al'> <br>
+        Si: <input type="text" required name = 'Si'> <br>
+        K:  <input type="text" required name = 'K'> <br>
+        Ca: <input type="text" required name = 'Ca'> <br>
+        Ba: <input type="text" required name = 'Ba'> <br>
+        Fe: <input type="text" required name = 'Fe'> <br>
+
+        <input type="submit" required value="submit"> <br>
+    </form>
+
+    
+</body>
+</html>
